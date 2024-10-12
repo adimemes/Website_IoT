@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Sensor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style_sensor.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <h2></h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sensor.html">Sensors</a></li>
+      <li><a href="report.html">Reports</a></li>
+    </ul>
+  </div>
+
+  <!-- Toggle Button -->
+  <button class="toggle-btn" id="toggle-btn">☰</button>
+
+  <!-- Main Content -->
+  <div class="container" id="content">
+    <h2>Laporan Sensor 1</h2> <br>
+
+    <table id="sensorReportTable">
+        <thead>
+          <tr>
+            <th>Timestamp</th>
+            <th>Jarak (cm)</th>
+            <th>Suhu (°C)</th>
+            <th>Humidity (%)</th>
+            <th>Getaran Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data laporan sensor akan ditambahkan di sini -->
+        </tbody>
+      </table>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-database-compat.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="report.js"></script>
+</body>
+</html>
